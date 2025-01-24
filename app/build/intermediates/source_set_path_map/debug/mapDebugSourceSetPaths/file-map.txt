@@ -1,0 +1,49 @@
+com.android.citybus.app-resValues-0 C:\BusCity\app\build\generated\res\resValues\debug
+com.android.citybus.app-packageDebugResources-1 C:\BusCity\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.android.citybus.app-packageDebugResources-2 C:\BusCity\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.android.citybus.app-debug-3 C:\BusCity\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.android.citybus.app-debug-4 C:\BusCity\app\src\debug\res
+com.android.citybus.app-main-5 C:\BusCity\app\src\main\res
+com.android.citybus.app-cardview-1.0.0-6 C:\Users\Tech For\.gradle\caches\transforms-4\07e073f87a334d1f3af705c1f63d4649\transformed\cardview-1.0.0\res
+com.android.citybus.app-emoji2-1.3.0-7 C:\Users\Tech For\.gradle\caches\transforms-4\2059dfa18bbfbd9571d1eecb25e81412\transformed\emoji2-1.3.0\res
+com.android.citybus.app-material-1.12.0-8 C:\Users\Tech For\.gradle\caches\transforms-4\26156fe69d0c3abd648e36f118ca3537\transformed\material-1.12.0\res
+com.android.citybus.app-viewpager2-1.0.0-9 C:\Users\Tech For\.gradle\caches\transforms-4\2bab43414b0af9627de9029380ab3b9a\transformed\viewpager2-1.0.0\res
+com.android.citybus.app-recyclerview-1.1.0-10 C:\Users\Tech For\.gradle\caches\transforms-4\2f79f91b7cc16351df65d7d3f6304ee9\transformed\recyclerview-1.1.0\res
+com.android.citybus.app-lifecycle-process-2.8.7-11 C:\Users\Tech For\.gradle\caches\transforms-4\343452aef545dca58a567f10cd5c1131\transformed\lifecycle-process-2.8.7\res
+com.android.citybus.app-savedstate-1.2.1-12 C:\Users\Tech For\.gradle\caches\transforms-4\532a86abeb59fb8fe56cc8bbf4e42e06\transformed\savedstate-1.2.1\res
+com.android.citybus.app-navigation-common-2.8.5-13 C:\Users\Tech For\.gradle\caches\transforms-4\5786308af7dfae788b8d7f4044d15421\transformed\navigation-common-2.8.5\res
+com.android.citybus.app-navigation-fragment-2.8.5-14 C:\Users\Tech For\.gradle\caches\transforms-4\591e6f212d4d0fe6845236c2684e055c\transformed\navigation-fragment-2.8.5\res
+com.android.citybus.app-savedstate-ktx-1.2.1-15 C:\Users\Tech For\.gradle\caches\transforms-4\5a813d008e8cefea583125c094a3080a\transformed\savedstate-ktx-1.2.1\res
+com.android.citybus.app-lifecycle-runtime-ktx-release-16 C:\Users\Tech For\.gradle\caches\transforms-4\61a28bd20767c46b9a804014924347a3\transformed\lifecycle-runtime-ktx-release\res
+com.android.citybus.app-transition-1.5.0-17 C:\Users\Tech For\.gradle\caches\transforms-4\6251dd8163044702c61d7b5327f8f245\transformed\transition-1.5.0\res
+com.android.citybus.app-fragment-1.6.2-18 C:\Users\Tech For\.gradle\caches\transforms-4\65468b30cc5d674e6e6b2c32a1130674\transformed\fragment-1.6.2\res
+com.android.citybus.app-core-1.13.0-19 C:\Users\Tech For\.gradle\caches\transforms-4\67530401252972baa470b3739174c06e\transformed\core-1.13.0\res
+com.android.citybus.app-window-1.0.0-20 C:\Users\Tech For\.gradle\caches\transforms-4\6e7e69939b6067fde2af5997cd619dab\transformed\window-1.0.0\res
+com.android.citybus.app-fragment-ktx-1.6.2-21 C:\Users\Tech For\.gradle\caches\transforms-4\73127b0f5457d28a7706834c940df854\transformed\fragment-ktx-1.6.2\res
+com.android.citybus.app-core-ktx-1.13.0-22 C:\Users\Tech For\.gradle\caches\transforms-4\73bb9b4434b7638674dc75dd96f18109\transformed\core-ktx-1.13.0\res
+com.android.citybus.app-profileinstaller-1.4.0-23 C:\Users\Tech For\.gradle\caches\transforms-4\7941bf5f82a38d452e16aab4a092b41e\transformed\profileinstaller-1.4.0\res
+com.android.citybus.app-appcompat-1.7.0-24 C:\Users\Tech For\.gradle\caches\transforms-4\7a4e7d1f5b7cd866fd4a9fde9380a43a\transformed\appcompat-1.7.0\res
+com.android.citybus.app-coordinatorlayout-1.1.0-25 C:\Users\Tech For\.gradle\caches\transforms-4\7f954ef81a72046161d8dbfabc1f773f\transformed\coordinatorlayout-1.1.0\res
+com.android.citybus.app-lifecycle-runtime-release-26 C:\Users\Tech For\.gradle\caches\transforms-4\81dc1e36f5258fb9de0371e0bfa7a540\transformed\lifecycle-runtime-release\res
+com.android.citybus.app-navigation-fragment-ktx-2.8.5-27 C:\Users\Tech For\.gradle\caches\transforms-4\82254d753524657a49127e90b1de3af1\transformed\navigation-fragment-ktx-2.8.5\res
+com.android.citybus.app-navigation-runtime-2.8.5-28 C:\Users\Tech For\.gradle\caches\transforms-4\8969db7e9f6e2d652cbe5d2dfcd35f63\transformed\navigation-runtime-2.8.5\res
+com.android.citybus.app-drawerlayout-1.1.1-29 C:\Users\Tech For\.gradle\caches\transforms-4\8a80916ead88c96e8274f1322c0a49c8\transformed\drawerlayout-1.1.1\res
+com.android.citybus.app-core-runtime-2.2.0-30 C:\Users\Tech For\.gradle\caches\transforms-4\917a2be992d585b83854c79c7e5d5d53\transformed\core-runtime-2.2.0\res
+com.android.citybus.app-lifecycle-livedata-core-ktx-2.8.7-31 C:\Users\Tech For\.gradle\caches\transforms-4\93796376547f03c4dd3c7edfe44f9e7c\transformed\lifecycle-livedata-core-ktx-2.8.7\res
+com.android.citybus.app-emoji2-views-helper-1.3.0-32 C:\Users\Tech For\.gradle\caches\transforms-4\987f7d078651b5bb61acb0851ab277b1\transformed\emoji2-views-helper-1.3.0\res
+com.android.citybus.app-slidingpanelayout-1.2.0-33 C:\Users\Tech For\.gradle\caches\transforms-4\a6a46187c9b18d396a38dcb25c069c09\transformed\slidingpanelayout-1.2.0\res
+com.android.citybus.app-annotation-experimental-1.4.1-34 C:\Users\Tech For\.gradle\caches\transforms-4\a72b7cb8a09f527d873a1b25af911c4f\transformed\annotation-experimental-1.4.1\res
+com.android.citybus.app-lifecycle-viewmodel-release-35 C:\Users\Tech For\.gradle\caches\transforms-4\b3bf992156c9bc93d301e3935123c778\transformed\lifecycle-viewmodel-release\res
+com.android.citybus.app-lifecycle-livedata-2.8.7-36 C:\Users\Tech For\.gradle\caches\transforms-4\b85ab62d34302f8a905c2682f8805a80\transformed\lifecycle-livedata-2.8.7\res
+com.android.citybus.app-navigation-common-ktx-2.8.5-37 C:\Users\Tech For\.gradle\caches\transforms-4\be99774bfa121b7037d0888258912e1d\transformed\navigation-common-ktx-2.8.5\res
+com.android.citybus.app-appcompat-resources-1.7.0-38 C:\Users\Tech For\.gradle\caches\transforms-4\c3494f62c69581924b475a0a5342fd5c\transformed\appcompat-resources-1.7.0\res
+com.android.citybus.app-lifecycle-viewmodel-ktx-2.8.7-39 C:\Users\Tech For\.gradle\caches\transforms-4\c7b5dd62d07286b8bbecc10fc803a36f\transformed\lifecycle-viewmodel-ktx-2.8.7\res
+com.android.citybus.app-lottie-6.3.0-40 C:\Users\Tech For\.gradle\caches\transforms-4\ceef2e82eef58b3e28d4e2160d2b8237\transformed\lottie-6.3.0\res
+com.android.citybus.app-navigation-runtime-ktx-2.8.5-41 C:\Users\Tech For\.gradle\caches\transforms-4\cf605f7870972c7966bcaecd45a1e69c\transformed\navigation-runtime-ktx-2.8.5\res
+com.android.citybus.app-osmdroid-android-6.1.15-42 C:\Users\Tech For\.gradle\caches\transforms-4\d402c13804e9214e8764a0e63f162519\transformed\osmdroid-android-6.1.15\res
+com.android.citybus.app-lifecycle-livedata-core-2.8.7-43 C:\Users\Tech For\.gradle\caches\transforms-4\d9e56d15526bd795799d404a8a5ad7fa\transformed\lifecycle-livedata-core-2.8.7\res
+com.android.citybus.app-startup-runtime-1.1.1-44 C:\Users\Tech For\.gradle\caches\transforms-4\e6850f33d1c6658767c93e3b451dce6e\transformed\startup-runtime-1.1.1\res
+com.android.citybus.app-lifecycle-viewmodel-savedstate-2.8.7-45 C:\Users\Tech For\.gradle\caches\transforms-4\ea5210ef692aa5eb39ab749bc8cf5434\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
+com.android.citybus.app-activity-1.8.0-46 C:\Users\Tech For\.gradle\caches\transforms-4\ed02a96ebe28fa1d379029a80dfe6995\transformed\activity-1.8.0\res
+com.android.citybus.app-constraintlayout-2.2.0-47 C:\Users\Tech For\.gradle\caches\transforms-4\ef65d590c71fa572654eeab2e4063601\transformed\constraintlayout-2.2.0\res
+com.android.citybus.app-activity-ktx-1.8.0-48 C:\Users\Tech For\.gradle\caches\transforms-4\f770e4ad1958a65639ebed098dd12db7\transformed\activity-ktx-1.8.0\res

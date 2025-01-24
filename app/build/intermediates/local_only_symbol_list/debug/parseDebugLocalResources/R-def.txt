@@ -1,0 +1,31 @@
+R_DEF: Internal format may change without notice
+local
+anim enter_from_right
+anim exit_to_bottom
+color black
+color blue_pattern
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+dimen dimen_200dp
+dimen dimen_30sp
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id buttonTest
+id containerView
+id lottieBusAnimatorView
+id mapView
+id nameAppTitle
+layout activity_main
+layout activity_splash
+layout fragment_buses_position
+mipmap ic_launcher
+mipmap ic_launcher_round
+raw bus_animation
+string app_name
+style Theme.CityBus
+xml backup_rules
+xml data_extraction_rules
