@@ -16,6 +16,14 @@
         "source": "com.android.citybus.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.android.citybus.app-debug-4:/layout_activity_maps.xml.flat",
+        "source": "com.android.citybus.app-main-6:/layout/activity_maps.xml"
+    },
+    {
+        "merged": "com.android.citybus.app-debug-4:/drawable_ic_bus.jpg.flat",
+        "source": "com.android.citybus.app-main-6:/drawable/ic_bus.jpg"
+    },
+    {
         "merged": "com.android.citybus.app-debug-4:/layout_activity_splash.xml.flat",
         "source": "com.android.citybus.app-main-6:/layout/activity_splash.xml"
     },
@@ -66,10 +74,6 @@
     {
         "merged": "com.android.citybus.app-debug-4:/layout_activity_main.xml.flat",
         "source": "com.android.citybus.app-main-6:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.android.citybus.app-debug-4:/layout_fragment_buses_position.xml.flat",
-        "source": "com.android.citybus.app-main-6:/layout/fragment_buses_position.xml"
     },
     {
         "merged": "com.android.citybus.app-debug-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
