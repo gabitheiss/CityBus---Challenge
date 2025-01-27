@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
 }
 
 android {
@@ -44,6 +45,9 @@ android {
     viewBinding {
         enable = true
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -51,12 +55,11 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.transportation.consumer)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation (libs.androidx.lifecycle.viewmodel.ktx)
-//    implementation (libs.androidx.activity.ktx)
-//    implementation (libs.androidx.fragment.ktx)
     implementation (libs.androidx.navigation.fragment.ktx)
 
     //LottieFiles
@@ -75,6 +78,9 @@ dependencies {
     //Koin
     implementation(libs.koin.android)
 
-    //OpenStreetMap
-    implementation (libs.osmdroid.android)
+    //GoogleMaps
+    implementation (libs.play.services.maps)
+
+    //Secrets Map Plugin
+    implementation(libs.secrets.gradle.plugin)
 }

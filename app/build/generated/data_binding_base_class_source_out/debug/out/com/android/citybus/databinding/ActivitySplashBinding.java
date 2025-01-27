@@ -24,12 +24,17 @@ public final class ActivitySplashBinding implements ViewBinding {
   public final LottieAnimationView lottieBusAnimatorView;
 
   @NonNull
+  public final TextView nameAppSubtitle;
+
+  @NonNull
   public final TextView nameAppTitle;
 
   private ActivitySplashBinding(@NonNull ConstraintLayout rootView,
-      @NonNull LottieAnimationView lottieBusAnimatorView, @NonNull TextView nameAppTitle) {
+      @NonNull LottieAnimationView lottieBusAnimatorView, @NonNull TextView nameAppSubtitle,
+      @NonNull TextView nameAppTitle) {
     this.rootView = rootView;
     this.lottieBusAnimatorView = lottieBusAnimatorView;
+    this.nameAppSubtitle = nameAppSubtitle;
     this.nameAppTitle = nameAppTitle;
   }
 
@@ -66,6 +71,12 @@ public final class ActivitySplashBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.nameAppSubtitle;
+      TextView nameAppSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (nameAppSubtitle == null) {
+        break missingId;
+      }
+
       id = R.id.nameAppTitle;
       TextView nameAppTitle = ViewBindings.findChildViewById(rootView, id);
       if (nameAppTitle == null) {
@@ -73,7 +84,7 @@ public final class ActivitySplashBinding implements ViewBinding {
       }
 
       return new ActivitySplashBinding((ConstraintLayout) rootView, lottieBusAnimatorView,
-          nameAppTitle);
+          nameAppSubtitle, nameAppTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

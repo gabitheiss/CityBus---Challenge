@@ -8,8 +8,12 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_15sp">15sp</dimen>
     <dimen name="dimen_200dp">200dp</dimen>
     <dimen name="dimen_30sp">30sp</dimen>
     <string name="app_name">CityBus</string>
+    <string name="subtitle">São Paulo</string>
+    <string name="title_activity_maps">CityBus São Paulo</string>
     <style name="Theme.CityBus" parent="Theme.MaterialComponents.Light.DarkActionBar"/>
 </resources>
