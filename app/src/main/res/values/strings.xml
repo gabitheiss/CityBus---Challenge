@@ -9,4 +9,5 @@
     <string name="code_line">Código da linha: %s</string>
     <string name="not_found">Não foi possível encontrar nenhuma linha com este nome. 😔</string>
     <string name="search_lines_description">Encontre linhas de ônibus por nome</string>
+    <string name="title_map">Explore os ônibus agora e linhas em tempo real na cidade de São Paulo</string>
 </resources>

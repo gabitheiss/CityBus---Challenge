@@ -12,11 +12,15 @@
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\fragment_search.xml"
     },
     {
-        "merged": "com.android.citybus.app-mergeDebugResources-3:/layout/fragment_search.xml",
-        "source": "com.android.citybus.app-main-6:/layout/fragment_search.xml"
-    },
-    {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-mergeDebugResources-3:\\layout\\item_bus_line.xml",
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\item_bus_line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-mergeDebugResources-3:\\layout\\view_custom_map.xml",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\view_custom_map.xml"
+    },
+    {
+        "merged": "com.android.citybus.app-mergeDebugResources-3:/layout/view_custom_map.xml",
+        "source": "com.android.citybus.app-main-6:/layout/view_custom_map.xml"
     }
 ]
