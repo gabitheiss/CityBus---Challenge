@@ -1,4 +1,4 @@
-package com.android.citybus.ui.busesposition
+package com.android.citybus.ui.busesposition.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class BusesPositionViewModel(private val repository: BusesPositionRepository) : ViewModel() {
 
-    val _busesPositionLive = MutableLiveData<BusesPosition>()
+    private val _busesPositionLive = MutableLiveData<BusesPosition>()
     val busesPositionLive: LiveData<BusesPosition> = _busesPositionLive
 
     companion object {

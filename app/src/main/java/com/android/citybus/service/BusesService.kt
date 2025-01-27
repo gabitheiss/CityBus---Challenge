@@ -1,5 +1,6 @@
 package com.android.citybus.service
 
+import com.android.citybus.domain.model.BusesLines
 import com.android.citybus.domain.model.BusesPosition
 import retrofit2.Response
 import retrofit2.http.GET
@@ -17,4 +18,12 @@ interface BusesService {
         @Query("token") token: String,
         @Header("Cookie") cookie: String?
     ): Response<BusesPosition>
+
+    @GET("/v2.1/Linha/Buscar")
+    suspend fun getLines(
+        @Query("token") token: String,
+        @Query("termosBusca") searchTerm: String,
+        @Header("Cookie") cookie: String?
+    ): Response<List<BusesLines>>
+
 }

@@ -2373,7 +2373,9 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen dimen_02dp
 dimen dimen_05dp
+dimen dimen_0dp
 dimen dimen_10dp
+dimen dimen_14dp
 dimen dimen_15sp
 dimen dimen_200dp
 dimen dimen_20dp
@@ -3376,6 +3378,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id busesLineListView
 id buttonPanel
 id buttonsViewGroup
 id cache_measures
@@ -3394,11 +3397,13 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id circularIndicatorView
 id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id codeLineView
 id collapseActionView
 id compress
 id confirm_button
@@ -3432,6 +3437,7 @@ id design_navigation_view
 id dialog_button
 id dimensions
 id direct
+id directionView
 id disableHome
 id disableIntraAutoTransition
 id disablePostScroll
@@ -3512,7 +3518,8 @@ id immediateStop
 id included
 id indeterminate
 id info
-id inputPassword
+id inputLayoutSearch
+id inputSearch
 id invisible
 id inward
 id italic
@@ -3532,7 +3539,6 @@ id listMode
 id list_item
 id loadingView
 id locale
-id loginPassword
 id lottieBusAnimatorView
 id lottie_layer_name
 id ltr
@@ -3617,6 +3623,7 @@ id noState
 id none
 id normal
 id north
+id notFoundView
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3683,6 +3690,7 @@ id scrollIndicatorUp
 id scrollView
 id scrollable
 id searchButtonView
+id searchLinesDescriptionView
 id search_badge
 id search_bar
 id search_button
@@ -3954,6 +3962,7 @@ layout design_text_input_start_icon
 layout fragment_search
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_bus_line
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4065,7 +4074,9 @@ string call_notification_screening_text
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string circular_line
 string clear_text_end_icon_content_description
+string code_line
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -4084,6 +4095,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string direction_description
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4196,12 +4208,14 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string not_found
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search
+string search_lines_description
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -4502,6 +4516,8 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style CityBusCard
+style CityBusCard_MediumElevation
 style CityBusEditText
 style EditTextLayoutBackgroundGray
 style MaterialAlertDialog_Material3
