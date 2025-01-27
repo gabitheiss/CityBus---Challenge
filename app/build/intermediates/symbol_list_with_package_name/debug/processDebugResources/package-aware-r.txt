@@ -1482,6 +1482,7 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color color_primary_transparent
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -1539,6 +1540,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color grey_chalice
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -2215,6 +2217,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color semi_white
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -2368,10 +2371,15 @@ dimen design_tab_scrollable_min_width
 dimen design_tab_text_size
 dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
+dimen dimen_02dp
+dimen dimen_05dp
 dimen dimen_10dp
 dimen dimen_15sp
 dimen dimen_200dp
+dimen dimen_20dp
+dimen dimen_30dp
 dimen dimen_30sp
+dimen dimen_60dp
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen fastscroll_default_thickness
@@ -3121,6 +3129,9 @@ drawable amu_bubble_mask
 drawable amu_bubble_shadow
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_edit_text_gray
+drawable bg_circle_semi_white
+drawable black_cursor
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3179,7 +3190,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_pickuppointselected
+drawable ic_search
 drawable ic_search_black_24
+drawable ic_update
 drawable indeterminate_static
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3364,6 +3377,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id buttonPanel
+id buttonsViewGroup
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3390,7 +3404,6 @@ id compress
 id confirm_button
 id constraint
 id container
-id containerView
 id content
 id contentPanel
 id contiguous
@@ -3499,6 +3512,7 @@ id immediateStop
 id included
 id indeterminate
 id info
+id inputPassword
 id invisible
 id inward
 id italic
@@ -3516,12 +3530,15 @@ id line3
 id linear
 id listMode
 id list_item
+id loadingView
 id locale
+id loginPassword
 id lottieBusAnimatorView
 id lottie_layer_name
 id ltr
 id m3_side_sheet
 id mapView
+id mapViewGroup
 id marquee
 id masked
 id match_constraint
@@ -3665,6 +3682,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchButtonView
 id search_badge
 id search_bar
 id search_button
@@ -3773,6 +3791,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id updateButtonView
 id useLogo
 id vertical
 id vertical_only
@@ -3911,7 +3930,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_main
 layout activity_maps
 layout activity_splash
 layout amu_info_window
@@ -3933,6 +3951,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_search
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -4182,6 +4201,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string search
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -4191,6 +4211,7 @@ string side_sheet_behavior
 string status_bar_notification_info_overflow
 string subtitle
 string title_activity_maps
+string update
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -4481,6 +4502,8 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style CityBusEditText
+style EditTextLayoutBackgroundGray
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Animation
 style MaterialAlertDialog_Material3_Body_Text

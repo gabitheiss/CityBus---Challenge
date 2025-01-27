@@ -1,14 +1,22 @@
 [
     {
-        "merged": "com.android.citybus.app-mergeDebugResources-3:/layout/activity_splash.xml",
-        "source": "com.android.citybus.app-main-6:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-mergeDebugResources-3:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "com.android.citybus.app-mergeDebugResources-3:/layout/activity_main.xml",
-        "source": "com.android.citybus.app-main-6:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-mergeDebugResources-3:\\layout\\activity_maps.xml",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\activity_maps.xml"
     },
     {
-        "merged": "com.android.citybus.app-mergeDebugResources-3:/layout/activity_maps.xml",
-        "source": "com.android.citybus.app-main-6:/layout/activity_maps.xml"
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-mergeDebugResources-3:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "com.android.citybus.app-mergeDebugResources-3:/layout/fragment_search.xml",
+        "source": "com.android.citybus.app-main-6:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\activity_main.xml"
     }
 ]

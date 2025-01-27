@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditTextLayoutBackgroundGray">
+        <item name="android:background">@drawable/background_edit_text_gray</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:paddingStart">08dp</item>
+        <item name="boxBackgroundMode">none</item>
+    </style>
+
+    <style name="CityBusEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:minHeight">38dp</item>
+        <item name="android:paddingStart">08dp</item>
+        <item name="android:paddingEnd">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/grey_chalice</item>
+        <item name="android:background">@color/color_primary_transparent</item>
+        <item name="android:textCursorDrawable">@drawable/black_cursor</item>
+    </style>
+</resources>

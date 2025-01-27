@@ -9,29 +9,37 @@ import androidx.appcompat.app.AppCompatActivity
 import com.android.citybus.R
 import com.android.citybus.databinding.ActivityMapsBinding
 import com.android.citybus.domain.model.BusesPosition
+import com.android.citybus.ext.gone
 import com.android.citybus.ext.isLocationPermissionGranted
+import com.android.citybus.ext.replaceFragmentWithAnimation
+import com.android.citybus.ext.visible
+import com.android.citybus.ui.search.SearchFragment
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.maps.android.clustering.ClusterItem
+import com.google.maps.android.clustering.ClusterManager
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class BusesPositionMapActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var myMap: GoogleMap
-    private lateinit var binding: ActivityMapsBinding
+
+    private var _binding: ActivityMapsBinding? = null
+    private val binding get() = _binding!!
+
     private lateinit var fusedLocationClient: FusedLocationProviderClient
+    private lateinit var clusterManager: ClusterManager<BusMarker>
 
     private val viewModel by viewModel<BusesPositionViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMapsBinding.inflate(layoutInflater)
+        _binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val mapFragment = supportFragmentManager.findFragmentById(R.id.mapView) as SupportMapFragment
@@ -42,11 +50,27 @@ class BusesPositionMapActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onStart()
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-        viewModel.apply {
-            getBusesPosition()
+        with(binding) {
+            viewModel.apply {
+                getBusesPosition()
+                _busesPositionLive.observeForever { busesPosition ->
+                    clusterManager.clearItems()
+                    addMarkersInMap(busesPosition)
+                    clusterManager.cluster()
+                    loadingView.gone()
+                    mapViewGroup.visible()
+                }
+            }
 
-            busesPositionLive.observeForever {
-                addMarkersInMap(it)
+            updateButtonView.setOnClickListener {
+                viewModel.getBusesPosition()
+                loadingView.visible()
+                mapViewGroup.gone()
+
+            }
+
+            searchButtonView.setOnClickListener {
+                replaceFragmentWithAnimation(SearchFragment.newInstance(), R.id.container, true)
             }
         }
     }
@@ -59,19 +83,33 @@ class BusesPositionMapActivity : AppCompatActivity(), OnMapReadyCallback {
             isMyLocationEnabled = isLocationPermissionGranted()
 
             moveCamera(CameraUpdateFactory.newLatLng(getLocationUser()))
+
+            setupClusterManager()
         }
     }
 
     private fun addMarkersInMap(busesPosition: BusesPosition) {
         busesPosition.lines.forEach { line ->
             line.vehiclesList.forEach { vehicle ->
-                myMap.addMarker(
-                    MarkerOptions()
-                        .position(LatLng(vehicle.latitude, vehicle.longitude))
-                        .title("Linha ${line.completeSignboard} - Prefixo ${vehicle.prefix}")
-                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_bus))
+                val markerItem = BusMarker(
+                    LatLng(vehicle.latitude, vehicle.longitude),
+                    "Linha ${line.completeSignboard} - Prefixo ${vehicle.prefix}"
                 )
+                clusterManager.addItem(markerItem)
             }
+        }
+    }
+
+    private fun setupClusterManager() {
+        clusterManager = ClusterManager<BusMarker>(this, myMap)
+
+        val customRenderer = CustomClusterRenderer(this, myMap, clusterManager)
+        clusterManager.renderer = customRenderer
+
+        myMap.apply {
+            setOnCameraIdleListener(clusterManager)
+            setOnMarkerClickListener(clusterManager)
+            setOnInfoWindowClickListener(clusterManager)
         }
     }
 
@@ -93,5 +131,20 @@ class BusesPositionMapActivity : AppCompatActivity(), OnMapReadyCallback {
             Log.e("Localização", "Erro ao acessar localização: ${e.message}")
             return LatLng(-23.560372327785654, -46.65070732268567)
         }
+    }
+
+    inner class BusMarker(private val position: LatLng, private val title: String) : ClusterItem {
+
+        override fun getPosition(): LatLng {
+            return position
+        }
+
+        override fun getTitle(): String {
+            return title
+        }
+
+        override fun getSnippet(): String? = null
+
+        override fun getZIndex(): Float? = null
     }
 }

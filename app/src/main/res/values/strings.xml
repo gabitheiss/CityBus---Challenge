@@ -2,4 +2,6 @@
     <string name="app_name">CityBus</string>
     <string name="subtitle">São Paulo</string>
     <string name="title_activity_maps">CityBus São Paulo</string>
+    <string name="update">Atualizar</string>
+    <string name="search">Buscar</string>
 </resources>

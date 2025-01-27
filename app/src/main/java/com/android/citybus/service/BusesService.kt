@@ -9,15 +9,12 @@ import retrofit2.http.Query
 
 interface BusesService {
 
+    @POST("/v2.1/Login/Autenticar")
+    suspend fun toAuthenticate(@Query("token") token: String): Response<Boolean>
+
     @GET("/v2.1/Posicao")
     suspend fun getBusesPosition(
         @Query("token") token: String,
         @Header("Cookie") cookie: String?
     ): Response<BusesPosition>
-
-
-
-    @POST("/v2.1/Login/Autenticar")
-    suspend fun toAuthenticate(@Query("token") token: String): Response<Boolean>
-
 }
