@@ -31,6 +31,7 @@
     <string name="search_lines_description">Encontre linhas de ônibus por nome</string>
     <string name="subtitle">São Paulo</string>
     <string name="title_activity_maps">CityBus São Paulo</string>
+    <string name="title_map">Explore os ônibus agora e linhas em tempo real na cidade de São Paulo</string>
     <string name="update">Atualizar</string>
     <style name="CityBusCard">
         <item name="cardCornerRadius">16dp</item>

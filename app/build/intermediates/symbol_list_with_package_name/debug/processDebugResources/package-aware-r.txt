@@ -3543,6 +3543,7 @@ id lottieBusAnimatorView
 id lottie_layer_name
 id ltr
 id m3_side_sheet
+id mapCustomView
 id mapView
 id mapViewGroup
 id marquee
@@ -3779,6 +3780,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id titleView
 id title_template
 id toggle
 id top
@@ -4024,6 +4026,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout view_custom_map
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -4225,6 +4228,7 @@ string side_sheet_behavior
 string status_bar_notification_info_overflow
 string subtitle
 string title_activity_maps
+string title_map
 string update
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
