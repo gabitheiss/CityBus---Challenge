@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue_pattern">#02416c</color>
+    <color name="semi_white">#F5F5F5</color>
+    <color name="grey_chalice">#9e9e9e</color>
+    <color name="color_primary_transparent">#00000000</color>
 </resources>
