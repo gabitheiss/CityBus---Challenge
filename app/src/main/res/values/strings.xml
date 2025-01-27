@@ -3,5 +3,10 @@
     <string name="subtitle">São Paulo</string>
     <string name="title_activity_maps">CityBus São Paulo</string>
     <string name="update">Atualizar</string>
-    <string name="search">Buscar</string>
+    <string name="search">Digite o nome da linha:</string>
+    <string name="circular_line">Linha Circular</string>
+    <string name="direction_description">De %s para %s</string>
+    <string name="code_line">Código da linha: %s</string>
+    <string name="not_found">Não foi possível encontrar nenhuma linha com este nome. 😔</string>
+    <string name="search_lines_description">Encontre linhas de ônibus por nome</string>
 </resources>

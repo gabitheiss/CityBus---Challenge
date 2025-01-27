@@ -13,7 +13,8 @@ import com.android.citybus.ext.gone
 import com.android.citybus.ext.isLocationPermissionGranted
 import com.android.citybus.ext.replaceFragmentWithAnimation
 import com.android.citybus.ext.visible
-import com.android.citybus.ui.search.SearchFragment
+import com.android.citybus.ui.busesposition.viewmodel.BusesPositionViewModel
+import com.android.citybus.ui.searchlines.SearchLinesFragment
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -53,7 +54,7 @@ class BusesPositionMapActivity : AppCompatActivity(), OnMapReadyCallback {
         with(binding) {
             viewModel.apply {
                 getBusesPosition()
-                _busesPositionLive.observeForever { busesPosition ->
+                busesPositionLive.observeForever { busesPosition ->
                     clusterManager.clearItems()
                     addMarkersInMap(busesPosition)
                     clusterManager.cluster()
@@ -70,7 +71,7 @@ class BusesPositionMapActivity : AppCompatActivity(), OnMapReadyCallback {
             }
 
             searchButtonView.setOnClickListener {
-                replaceFragmentWithAnimation(SearchFragment.newInstance(), R.id.container, true)
+                replaceFragmentWithAnimation(SearchLinesFragment.newInstance(), R.id.container, true)
             }
         }
     }
