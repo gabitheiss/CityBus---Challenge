@@ -36,7 +36,7 @@ Desenvolvido em apenas 4 dias, sem prévia experiência com mapas, este projeto 
 2. **Melhoria na Obtenção de Localização**: Implementação de métodos mais precisos e eficientes
 3. **Correção de Bugs na Busca**: Aprimoramento da funcionalidade de pesquisa
 4. **Integração de Endpoints Adicionais**: Exploração de recursos adicionais da API da SPTrans
-5. **Testes Unitários Completos**: Cobertura total com testes automatizados
+5. **Testes Unitários Completos**: Cobertura total com testes unitários
 
 ## Instalação
 
