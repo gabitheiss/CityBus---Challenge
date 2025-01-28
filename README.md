@@ -47,7 +47,7 @@ Este projeto é um aplicativo Android desenvolvido em Kotlin. Para instalar e ex
 3. Abra o projeto no Android Studio.
 5. Construa e execute o aplicativo.
 
-**[Download APK aqui!](https://drive.google.com/file/d/1Tv99YhMnGKZ3mW1M2vZQfRq0eg1f7_UN/view?usp=sharing)**
+**[Download APK aqui!](https://www.dropbox.com/scl/fi/rtwwk1znbmfskbzn7yrpw/app-debug.apk?rlkey=3waa3fw58fu358x55swhxxw7k&st=ivwgebgi&dl=0)**
 
 ## Contribuições
 
