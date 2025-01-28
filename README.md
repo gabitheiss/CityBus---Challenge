@@ -4,7 +4,7 @@
 
 ## Overview
 
-Este aplicativo móvel é um guia de rotas para ônibus da SPTrans, permitindo aos usuários visualizar em tempo real a localização dos ônibus em circulação na cidade de São Paulo. Com uma interface intuitiva, o aplicativo oferece uma experiência de navegação urbana moderna e eficiente.
+Este aplicativo móvel é um guia de posições de ônibus da SPTrans, permitindo aos usuários visualizar em tempo real a localização dos ônibus em circulação na cidade de São Paulo. Com uma interface intuitiva, o aplicativo oferece uma experiência de navegação urbana moderna e eficiente.
 
 O aplicativo utiliza a [API da SPTrans](https://www.sptrans.com.br/desenvolvedores/api-do-olho-vivo-guia-de-referencia/documentacao-api/) para fornecer dados atualizados e precisos.
 
@@ -16,6 +16,7 @@ Desenvolvido em apenas 4 dias, sem prévia experiência com mapas, este projeto 
 - Pesquisa por linhas de ônibus com exibição das posições atualizadas
 - Mapa personalizado para melhor visualização da rede de ônibus
 - Utilização da API da SPTrans para dados em tempo real
+- Marcadores agrupados em clusters para otimização e performance
 
 ## Tecnologias Utilizadas
 
@@ -28,12 +29,6 @@ Desenvolvido em apenas 4 dias, sem prévia experiência com mapas, este projeto 
 - **Localização do Usuário**: Integração com o sistema de localização do Android
 - **Google Maps API**: Para visualização interativa do mapa
 - **Cluster Manager**: Otimização de marcadores próximos no mapa
-
-## Desenvolvimento e Habilidades Demonstradas
-
-- **Tempo de Desenvolvimento**: Completo em apenas 4 dias
-- **Aprendizado Rápido**: Sem prévia experiência com mapas, demonstrando habilidade de adaptação rápida
-- **Implementação Eficiente**: Criação de um aplicativo funcional e útil dentro de prazos apertados
 
 ## Melhorias Futuras
 
@@ -59,10 +54,10 @@ Este projeto é um aplicativo Android desenvolvido em Kotlin. Para instalar e ex
 Contribuições são bem-vindas! Se você tiver sugestões de melhorias ou quiser contribuir para o projeto, siga:
 
 1. Fork este repositório.
-2. Crie sua branch (`git checkout -b feature/amazing-feature`).
+2. Crie sua branch (`git checkout -b feature/sua-branch`).
 3. Faça suas alterações.
 4. Comite suas mudanças (`git commit -am 'Add some amazing feature'`).
-5. Push para a branch (`git push origin feature/amazing-feature`).
+5. Push para a branch (`git push origin feature/sua-branche`).
 6. Abra uma Pull Request.
 
 ## Contato
