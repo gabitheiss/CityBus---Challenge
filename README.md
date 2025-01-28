@@ -1,6 +1,6 @@
 # CityBus São Paulo App
 
-(https://raw.githubusercontent.com/gabitheiss/CityBus---Challenge/main/mockup_app.png)
+![mockup_app.png](mockup_app.png)
 
 ## Overview
 
