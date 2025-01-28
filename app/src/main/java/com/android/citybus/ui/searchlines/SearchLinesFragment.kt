@@ -6,11 +6,14 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.android.citybus.R
 import com.android.citybus.databinding.FragmentSearchBinding
-import com.android.citybus.domain.model.BusesLines
 import com.android.citybus.ext.gone
+import com.android.citybus.ext.replaceFragmentWithAnimation
 import com.android.citybus.ext.visible
+import com.android.citybus.ui.busesline.BusesLineFragment
 import com.android.citybus.ui.searchlines.adapter.BusesLinesAdapterListener
 import com.android.citybus.ui.searchlines.adapter.SearchLinesAdapter
 import com.android.citybus.ui.searchlines.viewmodel.SearchLinesViewModel
@@ -78,7 +81,9 @@ class SearchLinesFragment: Fragment(), BusesLinesAdapterListener {
         }
     }
 
-    override fun onLineClick(line: BusesLines) {
-        println(line)
+    override fun onLineClick(line: String) {
+        context?.let {
+            (activity as AppCompatActivity).replaceFragmentWithAnimation(BusesLineFragment.newInstance(line), R.id.containerSearch, true)
+        }
     }
 }

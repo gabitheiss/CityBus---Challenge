@@ -14,7 +14,6 @@ import com.android.citybus.ext.visible
 class SearchLinesAdapter(private var items: List<BusesLines>, private val listener: BusesLinesAdapterListener, private val context: Context):
     RecyclerView.Adapter<SearchLinesAdapter.BusLineViewHolder>() {
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchLinesAdapter.BusLineViewHolder {
         return BusLineViewHolder(ItemBusLineBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
@@ -23,7 +22,7 @@ class SearchLinesAdapter(private var items: List<BusesLines>, private val listen
         items[position].apply {
             holder.bind(this)
             holder.itemView.setOnClickListener {
-                listener.onLineClick(this)
+                listener.onLineClick(this.codeLine.toString())
             }
         }
     }

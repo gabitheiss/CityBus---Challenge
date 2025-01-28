@@ -1,11 +1,12 @@
 package com.android.citybus
 
 import android.app.Application
-import com.android.citybus.di.apiModule
-import com.android.citybus.di.repositoriesModule
-import com.android.citybus.di.repositorySearchModule
-import com.android.citybus.di.searchLinesViewModelsModule
-import com.android.citybus.di.viewModelsModule
+import com.android.citybus.di.repositoriesmodule.busesPositionRepositoryModule
+import com.android.citybus.di.repositoriesmodule.searchLinesRepositoryModule
+import com.android.citybus.di.servicesmodule.busesServiceModule
+import com.android.citybus.di.viewmodelsmodule.busesLineViewModelModule
+import com.android.citybus.di.viewmodelsmodule.busesPositionViewModelModule
+import com.android.citybus.di.viewmodelsmodule.searchLinesViewModelModule
 import org.koin.core.context.startKoin
 
 class AppApplication : Application() {
@@ -14,11 +15,12 @@ class AppApplication : Application() {
         super.onCreate()
         startKoin {
             modules(
-                apiModule,
-                repositoriesModule,
-                repositorySearchModule,
-                viewModelsModule,
-                searchLinesViewModelsModule
+                busesServiceModule,
+                busesPositionRepositoryModule,
+                searchLinesRepositoryModule,
+                busesLineViewModelModule,
+                busesPositionViewModelModule,
+                searchLinesViewModelModule
             )
         }
     }

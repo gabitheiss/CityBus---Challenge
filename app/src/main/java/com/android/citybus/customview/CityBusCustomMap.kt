@@ -9,6 +9,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import com.android.citybus.R
 import com.android.citybus.databinding.ViewCustomMapBinding
 import com.android.citybus.domain.model.BusesPosition
+import com.android.citybus.domain.model.BusesPositionToLine
 import com.android.citybus.ext.isLocationPermissionGranted
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -65,7 +66,7 @@ class CityBusCustomMap @JvmOverloads constructor(
         }
     }
 
-    fun addMarkersInMap(busesPosition: BusesPosition) {
+    fun addMarkersAllBusesInMap(busesPosition: BusesPosition) {
         busesPosition.lines.forEach { line ->
             line.vehiclesList.forEach { vehicle ->
                 val markerItem = BusMarker(
@@ -77,12 +78,23 @@ class CityBusCustomMap @JvmOverloads constructor(
         }
     }
 
+    fun addMarkersBusesLineInMap(busesLinePosition: BusesPositionToLine) {
+        busesLinePosition.buses.forEach { line ->
+            val markerItem = BusMarker(LatLng(line.latitude, line.longitude), "Linha ${line.prefix}")
+            clusterManager.addItem(markerItem)
+        }
+    }
+
     fun clearItemsCluster() {
         clusterManager.clearItems()
     }
 
     fun cluster() {
         clusterManager.cluster()
+    }
+
+    fun setTextTitle(textTitle: String) {
+        binding.titleView.text = textTitle
     }
 
     inner class BusMarker(private val position: LatLng, private val title: String) : ClusterItem {

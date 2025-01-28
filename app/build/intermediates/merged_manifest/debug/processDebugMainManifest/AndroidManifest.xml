@@ -54,6 +54,10 @@
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
+            android:name="com.android.citybus.ui.searchlines.SearchActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
             android:name="com.android.citybus.ui.SplashActivity"
             android:exported="true" >
             <intent-filter>

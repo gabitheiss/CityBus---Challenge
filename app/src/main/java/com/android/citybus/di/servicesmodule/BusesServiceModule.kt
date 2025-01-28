@@ -1,11 +1,11 @@
-package com.android.citybus.di
+package com.android.citybus.di.servicesmodule
 
 import com.android.citybus.service.BusesService
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-val apiModule = module {
+val busesServiceModule = module {
 
     single {
         provideService()

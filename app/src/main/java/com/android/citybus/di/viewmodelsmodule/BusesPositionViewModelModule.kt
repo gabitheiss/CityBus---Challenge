@@ -1,11 +1,11 @@
-package com.android.citybus.di
+package com.android.citybus.di.viewmodelsmodule
 
 import com.android.citybus.repository.BusesPositionRepository
 import com.android.citybus.ui.busesposition.viewmodel.BusesPositionViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
-val viewModelsModule = module {
+val busesPositionViewModelModule = module {
     viewModel {
         provideBusesPositionViewModel(repository = get())
     }
