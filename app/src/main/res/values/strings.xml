@@ -8,6 +8,8 @@
     <string name="direction_description">De %s para %s</string>
     <string name="code_line">Código da linha: %s</string>
     <string name="not_found">Não foi possível encontrar nenhuma linha com este nome. 😔</string>
+    <string name="not_found_buses">Não foi possível encontrar nenhum ônibus rodando agora para esta linha. 😔</string>
     <string name="search_lines_description">Encontre linhas de ônibus por nome</string>
     <string name="title_map">Explore os ônibus agora e linhas em tempo real na cidade de São Paulo</string>
+    <string name="title_line_map">Agora no mapa, localização dos ônibus da linha escolhida </string>
 </resources>

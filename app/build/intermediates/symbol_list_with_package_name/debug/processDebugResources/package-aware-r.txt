@@ -1543,6 +1543,7 @@ color foreground_material_light
 color grey_chalice
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -3170,6 +3171,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
 drawable ic_bus
+drawable ic_bus_jpg
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -3409,6 +3411,7 @@ id compress
 id confirm_button
 id constraint
 id container
+id containerSearch
 id content
 id contentPanel
 id contiguous
@@ -3544,6 +3547,7 @@ id lottie_layer_name
 id ltr
 id m3_side_sheet
 id mapCustomView
+id mapLineCustomView
 id mapView
 id mapViewGroup
 id marquee
@@ -3941,6 +3945,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_maps
+layout activity_search
 layout activity_splash
 layout amu_info_window
 layout amu_text_bubble
@@ -3961,6 +3966,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_buses_line
 layout fragment_search
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
@@ -4212,6 +4218,7 @@ string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string not_found
+string not_found_buses
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -4228,6 +4235,7 @@ string side_sheet_behavior
 string status_bar_notification_info_overflow
 string subtitle
 string title_activity_maps
+string title_line_map
 string title_map
 string update
 style AlertDialog_AppCompat

@@ -1,14 +1,15 @@
 package com.android.citybus.ui.busesposition
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.android.citybus.R
 import com.android.citybus.databinding.ActivityMapsBinding
 import com.android.citybus.ext.gone
-import com.android.citybus.ext.replaceFragmentWithAnimation
 import com.android.citybus.ext.visible
 import com.android.citybus.ui.busesposition.viewmodel.BusesPositionViewModel
-import com.android.citybus.ui.searchlines.SearchLinesFragment
+import com.android.citybus.ui.searchlines.SearchActivity
+import com.android.citybus.util.getLocationUser
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class BusesPositionMapActivity : AppCompatActivity() {
@@ -22,8 +23,7 @@ class BusesPositionMapActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.mapCustomView.initializeMap(this, viewModel.getLocationUser(this))
+        binding.mapCustomView.initializeMap(this, getLocationUser(this))
     }
 
     override fun onStart() {
@@ -35,8 +35,9 @@ class BusesPositionMapActivity : AppCompatActivity() {
                 busesPositionLive.observeForever { busesPosition ->
                     mapCustomView.apply {
                         clearItemsCluster()
-                        addMarkersInMap(busesPosition)
+                        addMarkersAllBusesInMap(busesPosition)
                         cluster()
+                        setTextTitle(this@BusesPositionMapActivity.getString(R.string.title_map))
                     }
                     loadingView.gone()
                     mapViewGroup.visible()
@@ -51,7 +52,9 @@ class BusesPositionMapActivity : AppCompatActivity() {
             }
 
             searchButtonView.setOnClickListener {
-                replaceFragmentWithAnimation(SearchLinesFragment.newInstance(), R.id.container, true)
+                Intent(this@BusesPositionMapActivity, SearchActivity::class.java).apply {
+                    startActivity(this)
+                }
             }
         }
     }

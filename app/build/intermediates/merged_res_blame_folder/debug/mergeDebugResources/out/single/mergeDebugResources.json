@@ -28,8 +28,16 @@
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\layout_fragment_buses_line.xml.flat",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\fragment_buses_line.xml"
+    },
+    {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -48,8 +56,16 @@
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\drawable\\black_cursor.xml"
     },
     {
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\layout_activity_search.xml.flat",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\activity_search.xml"
+    },
+    {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.android.citybus.app-debug-4:/drawable_ic_bus.png.flat",
+        "source": "com.android.citybus.app-main-6:/drawable/ic_bus.png"
     },
     {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -64,24 +80,28 @@
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.android.citybus.app-debug-4:/layout_view_custom_map.xml.flat",
-        "source": "com.android.citybus.app-main-6:/layout/view_custom_map.xml"
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\drawable_background_edit_text_gray.xml.flat",
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\drawable\\background_edit_text_gray.xml"
     },
     {
-        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\drawable\\ic_launcher_background.xml"
-    },
-    {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\layout_fragment_all_buses_position.xml.flat",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\fragment_all_buses_position.xml"
+    },
+    {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\drawable_ic_bus_jpg.jpg.flat",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\drawable\\ic_bus_jpg.jpg"
     },
     {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\layout_activity_maps.xml.flat",
@@ -96,8 +116,16 @@
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\layout\\view_custom_map.xml"
     },
     {
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\drawable_ic_bus.xml.flat",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\drawable\\ic_bus.xml"
+    },
+    {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\raw_bus_animation.json.flat",
         "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\raw\\bus_animation.json"
+    },
+    {
+        "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\Tech For\\.gradle\\daemon\\8.6\\com.android.citybus.app-debug-4:\\drawable_ic_update.xml.flat",

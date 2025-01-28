@@ -6,6 +6,7 @@ color black
 color blue_pattern
 color color_primary_transparent
 color grey_chalice
+color ic_launcher_background
 color purple_200
 color purple_500
 color purple_700
@@ -28,6 +29,7 @@ drawable background_edit_text_gray
 drawable bg_circle_semi_white
 drawable black_cursor
 drawable ic_bus
+drawable ic_bus_jpg
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_search
@@ -37,12 +39,14 @@ id buttonsViewGroup
 id circularIndicatorView
 id codeLineView
 id container
+id containerSearch
 id directionView
 id inputLayoutSearch
 id inputSearch
 id loadingView
 id lottieBusAnimatorView
 id mapCustomView
+id mapLineCustomView
 id mapView
 id mapViewGroup
 id nameAppSubtitle
@@ -53,7 +57,9 @@ id searchLinesDescriptionView
 id titleView
 id updateButtonView
 layout activity_maps
+layout activity_search
 layout activity_splash
+layout fragment_buses_line
 layout fragment_search
 layout item_bus_line
 layout view_custom_map
@@ -65,10 +71,12 @@ string circular_line
 string code_line
 string direction_description
 string not_found
+string not_found_buses
 string search
 string search_lines_description
 string subtitle
 string title_activity_maps
+string title_line_map
 string title_map
 string update
 style CityBusCard
