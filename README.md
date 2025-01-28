@@ -1,5 +1,7 @@
 # CityBus São Paulo App
 
+(https://raw.githubusercontent.com/gabitheiss/CityBus---Challenge/main/mockup_app.png)
+
 ## Overview
 
 Este aplicativo móvel é um guia de rotas para ônibus da SPTrans, permitindo aos usuários visualizar em tempo real a localização dos ônibus em circulação na cidade de São Paulo. Com uma interface intuitiva, o aplicativo oferece uma experiência de navegação urbana moderna e eficiente.
