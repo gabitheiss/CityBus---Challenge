@@ -2,6 +2,11 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+    id("jacoco")
+}
+
+jacoco {
+    toolVersion = "0.8.11"
 }
 
 android {
@@ -61,8 +66,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    testImplementation (libs.mockito.core)
     testImplementation (libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.turbine)
+    testImplementation(libs.androidx.core.testing)
 
     //LottieFiles
     implementation(libs.lottie)
@@ -85,4 +92,58 @@ dependencies {
 
     //Secrets Map Plugin
     implementation(libs.secrets.gradle.plugin)
+}
+
+// Habilita a coleta de dados de cobertura nos testes unitários.
+tasks.withType<Test> {
+    extensions.configure<JacocoTaskExtension> {
+        isIncludeNoLocationClasses = true
+        excludes = listOf("jdk.internal.*")
+    }
+}
+
+// Filtros de exclusão da métrica de cobertura (ver Fase 5 do planejamento):
+// bootstrap (Application/Activity), DI Koin, mapa/cluster e código gerado
+// não são testáveis em unit test.
+val jacocoExcludes = listOf(
+    "**/R.class",
+    "**/R\$*.class",
+    "**/BuildConfig.*",
+    "**/Manifest*.*",
+    "**/*Test*.*",
+    "android/**/*.*",
+    "**/*Application*.*",
+    "**/*Activity*.*",
+    "**/di/**",
+    "**/customview/**",
+    "**/*_Impl*.*",
+    "**/*Binding*.*",
+    "**/databinding/**",
+)
+
+tasks.register<JacocoReport>("jacocoTestReport") {
+    dependsOn("testDebugUnitTest")
+    group = "verification"
+    description = "Gera o relatório de cobertura JaCoCo para os testes unitários (debug)."
+
+    reports {
+        xml.required.set(true)
+        html.required.set(true)
+    }
+
+    val buildDirFile = layout.buildDirectory.get().asFile
+    val kotlinClasses = fileTree("$buildDirFile/tmp/kotlin-classes/debug") {
+        exclude(jacocoExcludes)
+    }
+    val javaClasses = fileTree("$buildDirFile/intermediates/javac/debug/classes") {
+        exclude(jacocoExcludes)
+    }
+
+    sourceDirectories.setFrom(files("${project.projectDir}/src/main/java"))
+    classDirectories.setFrom(files(kotlinClasses, javaClasses))
+    executionData.setFrom(
+        fileTree(buildDirFile) {
+            include("**/*.exec", "**/*.ec")
+        }
+    )
 }
