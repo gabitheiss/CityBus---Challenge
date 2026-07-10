@@ -24,6 +24,9 @@ navigationFragmentKtx = "2.8.5"
 osmdroidAndroid = "6.1.15"
 playServicesMaps = "19.0.0"
 retrofit = "2.9.0"
+kotlinxCoroutinesTest = "1.7.3"
+turbine = "1.0.0"
+coreTesting = "2.2.0"
 secretsGradlePlugin = "2.0.1"
 googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
 transportationConsumer = "3.0.0"
@@ -57,6 +60,9 @@ lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 material = { module = "com.google.android.material:material", version.ref = "material" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
 osmdroid-android = { module = "org.osmdroid:osmdroid-android", version.ref = "osmdroidAndroid" }
 play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
