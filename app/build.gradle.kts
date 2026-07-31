@@ -5,6 +5,8 @@ plugins {
     id("jacoco")
 }
 
+val sptransToken: String = (project.findProperty("SPTRANS_TOKEN") as? String).orEmpty()
+
 jacoco {
     toolVersion = "0.8.11"
 }
@@ -24,6 +26,8 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        buildConfigField("String", "SPTRANS_TOKEN", "\"$sptransToken\"")
     }
 
     buildTypes {
@@ -52,6 +56,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -94,7 +99,6 @@ dependencies {
     implementation(libs.secrets.gradle.plugin)
 }
 
-// Habilita a coleta de dados de cobertura nos testes unitários.
 tasks.withType<Test> {
     extensions.configure<JacocoTaskExtension> {
         isIncludeNoLocationClasses = true
@@ -102,9 +106,6 @@ tasks.withType<Test> {
     }
 }
 
-// Filtros de exclusão da métrica de cobertura (ver Fase 5 do planejamento):
-// bootstrap (Application/Activity), DI Koin, mapa/cluster e código gerado
-// não são testáveis em unit test.
 val jacocoExcludes = listOf(
     "**/R.class",
     "**/R\$*.class",

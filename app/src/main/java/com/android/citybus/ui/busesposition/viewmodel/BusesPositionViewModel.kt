@@ -6,21 +6,20 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.android.citybus.domain.model.BusesPosition
 import com.android.citybus.repository.BusesPositionRepository
+import com.android.citybus.session.SessionManager
 import kotlinx.coroutines.launch
 
-class BusesPositionViewModel(private val repository: BusesPositionRepository) : ViewModel() {
+class BusesPositionViewModel(
+    private val repository: BusesPositionRepository,
+    private val sessionManager: SessionManager,
+) : ViewModel() {
 
     private val _busesPositionLive = MutableLiveData<BusesPosition>()
     val busesPositionLive: LiveData<BusesPosition> = _busesPositionLive
 
-    companion object {
-        private const val TOKEN = "9c1916e92687bbaf3be474e47214edd3822265ff008f8fc7867f051e787f3001"
-        private var COOKIE: String = ""
-    }
-
     fun getBusesPosition() {
         viewModelScope.launch {
-            repository.getBusesPosition(TOKEN, COOKIE).let { response ->
+            repository.getBusesPosition(sessionManager.cookie).let { response ->
                 println("body result: ${response.body()}")
                 when (response.code()) {
                     401 -> toAuthenticate()
@@ -32,8 +31,7 @@ class BusesPositionViewModel(private val repository: BusesPositionRepository) : 
 
     private fun toAuthenticate() {
         viewModelScope.launch {
-           with(repository.toAuthenticate(TOKEN)) {
-               println("body result authenticate: ${this.body()}")
+           with(repository.toAuthenticate()) {
                when (this.body()) {
                    true -> handleSuccessfulAuthentication(this.headers()["set-cookie"])
                    else ->  {
@@ -45,9 +43,8 @@ class BusesPositionViewModel(private val repository: BusesPositionRepository) : 
     }
 
     private fun handleSuccessfulAuthentication(responseHeaderCookie: String?) {
-        if (responseHeaderCookie != COOKIE) {
-            println("cookies response: ${responseHeaderCookie}, $COOKIE")
-            COOKIE = responseHeaderCookie ?: return
+        if (responseHeaderCookie != sessionManager.cookie) {
+            sessionManager.cookie = responseHeaderCookie ?: return
             getBusesPosition()
         }
     }
