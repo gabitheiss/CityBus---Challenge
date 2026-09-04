@@ -75,6 +75,7 @@ dependencies {
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.turbine)
     testImplementation(libs.androidx.core.testing)
+    testImplementation(libs.mockwebserver)
 
     //LottieFiles
     implementation(libs.lottie)

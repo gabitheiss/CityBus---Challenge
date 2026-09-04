@@ -5,17 +5,12 @@ import com.android.citybus.service.BusesService
 import retrofit2.Response
 
 interface BusesPositionRepository {
-    suspend fun getBusesPosition(cookie: String): Response<BusesPosition>
-    suspend fun toAuthenticate(): Response<Boolean>
+    suspend fun getBusesPosition(): Response<BusesPosition>
 }
 
 class BusesPositionRepositoryImpl(private val service: BusesService) : BusesPositionRepository {
 
-    override suspend fun getBusesPosition(cookie: String): Response<BusesPosition> {
-        return service.getBusesPosition(cookie)
-    }
-
-    override suspend fun toAuthenticate(): Response<Boolean> {
-        return service.toAuthenticate()
+    override suspend fun getBusesPosition(): Response<BusesPosition> {
+        return service.getBusesPosition()
     }
 }
