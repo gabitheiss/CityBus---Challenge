@@ -11,7 +11,8 @@ val busesPositionViewModelModule = module {
     }
 }
 
-fun provideBusesPositionViewModel(repository: BusesPositionRepository): BusesPositionViewModel {
+fun provideBusesPositionViewModel(
+    repository: BusesPositionRepository,
+): BusesPositionViewModel {
     return BusesPositionViewModel(repository)
-
 }

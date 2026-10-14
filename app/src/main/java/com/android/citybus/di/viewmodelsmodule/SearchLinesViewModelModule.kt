@@ -11,6 +11,8 @@ val searchLinesViewModelModule = module {
     }
 }
 
-fun provideSearchLinesViewModel(repository: SearchLinesRepository): SearchLinesViewModel {
+fun provideSearchLinesViewModel(
+    repository: SearchLinesRepository,
+): SearchLinesViewModel {
     return SearchLinesViewModel(repository)
 }

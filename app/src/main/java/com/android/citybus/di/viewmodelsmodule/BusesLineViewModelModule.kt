@@ -11,6 +11,8 @@ val busesLineViewModelModule = module {
     }
 }
 
-fun provideBusesLineViewModel(repository: SearchLinesRepository): BusesLineViewModel {
+fun provideBusesLineViewModel(
+    repository: SearchLinesRepository,
+): BusesLineViewModel {
     return BusesLineViewModel(repository)
 }

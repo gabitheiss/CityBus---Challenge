@@ -4,6 +4,7 @@ import android.app.Application
 import com.android.citybus.di.repositoriesmodule.busesPositionRepositoryModule
 import com.android.citybus.di.repositoriesmodule.searchLinesRepositoryModule
 import com.android.citybus.di.servicesmodule.busesServiceModule
+import com.android.citybus.di.sessionmodule.sessionModule
 import com.android.citybus.di.viewmodelsmodule.busesLineViewModelModule
 import com.android.citybus.di.viewmodelsmodule.busesPositionViewModelModule
 import com.android.citybus.di.viewmodelsmodule.searchLinesViewModelModule
@@ -15,6 +16,7 @@ class AppApplication : Application() {
         super.onCreate()
         startKoin {
             modules(
+                sessionModule,
                 busesServiceModule,
                 busesPositionRepositoryModule,
                 searchLinesRepositoryModule,
